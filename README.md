@@ -1,4 +1,4 @@
-# Random Programs!
+# List of Random Programs!
 
 Name | Description
 ---- | -----------
