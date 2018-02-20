@@ -27,7 +27,7 @@ public class Expensetocsv{
 
    public static void main(String[] args){
 
-      Expensetocsv exp1 = new Expensetocsv("latest.txt","test.csv");
+      Expensetocsv exp1 = new Expensetocsv("latest.txt","result.csv");
       exp1.readtoQueue();
       exp1.firstLine();
       exp1.mainWrite();
