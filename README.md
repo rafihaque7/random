@@ -2,5 +2,5 @@
 
 Name | Description
 ---- | -----------
-ExpenseAuto | Automatization of expenses texts to a csv file
+ExpenseAuto | Automation of expenses texts to a csv file
 
