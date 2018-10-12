@@ -1,1 +1,2 @@
-It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
+Ex: *python rca.py 2018F_CMPS115-01_RAC1_Submission_1.pdf*
+Create By [Rafi Haque ](http://www.rafihaque.com)
