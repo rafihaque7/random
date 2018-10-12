@@ -44,10 +44,12 @@ score = 0
 for d in myDict:
     if myDict[d] == True:
         score += 1
+    else:
+        print "Can not find " + d
 
 if myDict["agile"] == True:
     score += 1
 
-print myDict
+# print myDict
 
 print "\n\nThe score for answering all the questions: " + str(score) + "\n\n"
