@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-
+import re
 # Will return /ShowRatings.jsp?tid=2056294
 def getRateMyProfessorLink(name):
     url = "http://www.ratemyprofessors.com/search.jsp?query=" + name
@@ -20,7 +20,7 @@ def getRateMyProfessorInfo(link):
     soup = BeautifulSoup(page.text,'html.parser')
     container = soup.find('div', attrs={'class': 'left-breakdown'})
     infoDict["rating"] = container.findAll("div",{'class': 'breakdown-container quality'})[0].div.div.text.encode('ascii', 'ignore')
-    containerTakeAgain = container.findAll("div",{'class': 'breakdown-section takeAgain 60'})[0]
+    containerTakeAgain = container.findAll("div",{'class': re.compile('breakdown-section takeAgain *')})[0]
     infoDict["take_again"] = containerTakeAgain.findAll("div",{'class': 'grade'})[0].text.strip().encode('ascii', 'ignore')   
     return infoDict
 
@@ -46,7 +46,7 @@ def getRateMyProfessorComments(name):
 
 
 # print getRateMyProfessorLink("Jullig Richard")
-# print getRateMyProfessorInfo(getRateMyProfessorLink("Jullig Richard"))
+print getRateMyProfessorInfo(getRateMyProfessorLink("Patrick Tantalo"))
 
 
 getRateMyProfessorComments("Jullig Richard")

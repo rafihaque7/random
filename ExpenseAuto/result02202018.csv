@@ -1,0 +1,57 @@
+SANTU,,,ANTU,
+home Depot ,12.99,,Uber ,7.96
+Chipotle ,23.65,,dining ,16.0
+taqueria jal ,15.0,,anishuber ,5.04
+costcopiza ,10.86,,parking ,1.0
+poko bowl ,23.96,,Costco ,121.09
+Costco ,52.7,,cambodianfodd ,34.0
+Costco hotdogs ,3.27,,chipotle ,21.69
+Wingstop ,23.95,,habit ,22.45
+chegg ,19.95,,chipotle ,16.46
+gas ,41.19,,taqueriapericos ,30.08
+applebees ,29.97,,Uber ,10.62
+Wingstop ,16.88,,chipotle ,28.29
+Wingstop ,19.06,,Costco gas ,55.31
+Arthur car gas ,20.24,,chick flick ,17.06
+Saturn ,31.32,,costcogas ,51.29
+taqueria ,22.62,, fjjt ,21.08
+tacos ,7.75,,quick quack ,19.99
+El pollo loco ,25.83,,car Amazon stuff ,48.23
+Walmart ,11.43,,niruchacha ,200.0
+in n out ,18.1,,car wash ,7.99
+FasTrack toll ,5.0,,chipotle ,16.46
+launderland ,6.25,,car gas ,49.67
+jiffy lube ,315.0,,costco ,86.24
+quick quack ,7.99,,taqueria pericos ,16.67
+auto insurance ,290.0,,parking ,1.0
+key battery ,5.38,,Costco gas ,31.85
+Costco gas Mazda ,48.34,,tribalism pizza ,25.0
+Ruchi ,31.25,,comcast ,49.99
+kabul ,41.79,,comcast ,49.99
+car registration ,311.0,,amazon associates ,-38.02
+Wingstop ,32.61,,amazon associates ,-62.99
+Bluetooth ,28.0,,TOTAL,=SUM(E2:E32)
+Costco ,10.85,,,
+Costco gas ,53.38,,,
+Panda Express ,19.73,,,
+garage San Francisco ,18.0,,,
+lalli ,47.51,,,
+Arthur food ,8.2,,,
+lemonade ,5.92,,,
+pg&e ,124.58,,,
+pg&e ,106.24,,,
+Google ,-151.13,,,
+impact radius ,-51.58,,,
+Google ,-160.59,,,
+scmu ,150.69,,,
+scmu ,162.47,,,
+lemonade ,5.92,,,
+Chinese ,44.3,,,
+Parking ,1.0,,,
+uber ,11.88,,,
+TOTAL,=SUM(B2:B51)
+
+COMBINED,=B52+E33
+ONE SHOULD PAY,=B54/2
+Santu Transfer,=B55-B52
+Antu Transfer,=B55-E33
