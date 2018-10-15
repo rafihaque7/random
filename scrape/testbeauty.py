@@ -13,9 +13,9 @@ def getRateMyProfessorLink(name):
     page.close()
 
 # Will return a dictionary {'rating': '2.1', 'take_again': '60%'}
-def getRateMyProfessorInfo(link):
+def getRateMyProfessorInfo(name):
     infoDict = {}
-    url = "http://www.ratemyprofessors.com" + link
+    url = "http://www.ratemyprofessors.com" + getRateMyProfessorLink(name)
     page = requests.get(url)
     soup = BeautifulSoup(page.text,'html.parser')
     container = soup.find('div', attrs={'class': 'left-breakdown'})
@@ -46,10 +46,10 @@ def getRateMyProfessorComments(name):
 
 
 # print getRateMyProfessorLink("Jullig Richard")
-print getRateMyProfessorInfo(getRateMyProfessorLink("Patrick Tantalo"))
+print getRateMyProfessorInfo("Patrick Tantalo")
 
 
-getRateMyProfessorComments("Jullig Richard")
+# getRateMyProfessorComments("Jullig Richard")
 
 # tup = {"CMPS115" : [(43443,"A"), (33322,"B")]}
 # tup["CMPS115"].append((4443,"C+"))
