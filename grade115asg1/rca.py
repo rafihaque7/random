@@ -1,3 +1,4 @@
+# brew install pkg-config poppler
 import pdftotext
 import re
 import sys
