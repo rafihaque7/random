@@ -198,8 +198,18 @@ public class Expensetocsv{
                   i++;
                }
 
-               double doubleItem = Double.parseDouble(strArr[i]);
-               // double doubleItem = 5.0;
+               double doubleItem = -1.0;
+               try{
+               doubleItem = Double.parseDouble(strArr[i]);
+               } catch(Exception e) {
+                  System.out.println("You forgot to put a dollar amount \n\n\n\n");
+
+                  for(int s =0; s<strArr.length; s++){
+                     System.out.println(strArr[s]);
+                  }
+                
+               }
+
 
                Pair<String,Double> p1 = new Pair<String,Double>(strItem,doubleItem);
 
